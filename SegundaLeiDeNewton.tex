@@ -14,6 +14,7 @@
 \usepackage{indentfirst}
 \usepackage{multirow}
 \usepackage{physics}
+\usepackage[T1]{fontenc}    % para suporte a caracteres acentuados
 
 \usetikzlibrary{angles,quotes} % for pic
 \contourlength{1.2pt}
@@ -151,7 +152,7 @@
 		\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 			\hline
 			& \textbf{F1 (N)} & \textbf{F2 (N)} & \textbf{F3 (N)} & \textbf{F4 (N)} & \textbf{F5 (N)} & \textbf{F6 (N)} & \textbf{F7 (N)} & \textbf{F8 (N)} \\ \hline
-			\textbf{F aplicada} & 0,18 & 0,28 & 0,38 & 0,48 & 0,56 & 0,72 & 0,76 & \\ \hline
+			\textbf{F aplicada} & 0,18 & 0,28 & 0,38 & 0,48 & 0,56 & 0,72 & 0,76 & 0,86 \\ \hline
 			\textbf{x (m)} & \textbf{t (s)} & \textbf{t (s)} & \textbf{t (s)} & \textbf{t (s)} & \textbf{t (s)} & \textbf{t (s)} & \textbf{t (s)} & \textbf{t (s)} \\ \hline
 			% Linha 1
 			0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
@@ -292,32 +293,60 @@
 			\end{table}
 		\end{center}
 	
-		\textbf{4.10 -} Gráfico 3 é o gráfico da função F versus a. O significado físico do coeficiente angular obtido no Gráfico F versus a é a massa da objeto. Pois quanto maior for a aceleração, maior será a força.
+		\textbf{4.10 -} Gráfico 2 é o gráfico da função $F$ versus $a$. O significado físico do coeficiente angular obtido no Gráfico F versus a é a massa da objeto. Pois quanto maior for a aceleração, maior será a força.
 		
 		\begin{center}
 			\begin{figure}[h!]
 				\centering
 				\begin{flushleft}
-					\textbf{Gráfico 3 -} Gráfica com linhas tendência.
+					\textbf{Gráfico 2 -} Força em função da aceleração.
 				\end{flushleft}
 				\begin{tikzpicture}
 					\begin{axis}[
 						width=\textwidth, % Largura do gráfico
 						height=0.6\textwidth, % Altura do gráfico
-						xlabel={$t(s)$},
-						ylabel={$a(m/s^2)$},
+						xlabel={$t$ (s)},
+						ylabel={$x(t)$ (m)},
 						legend pos=north west,
 						grid=both,
-						title={Gráfico da Tabela 2},
+						title={Gráfico 2 da Tabela 2},
 						legend style={font=\small}
 						]
 						
-						\addplot[blue, mark=square*] coordinates {(0.018, 0,40) (0.028, 0,61) (0.036, 0,84) (0,054, 0.072) (0.6256, 0.09) (0.68885, 0.108) (0.74778, 0.126) (0.8025, 0.144) (0.85355, 0.162) (0.9022, 0.18)};
+						% Dados para F1
+						\addplot[blue, mark=square*] coordinates {(0.018, 0.40) (0.028, 0.61) (0.036, 0.84) (0.054, 1.08) (0.072, 1.30) (0.09, 1.52) (0.108, 1.74) (0.126, 1.96)};
 						\addlegendentry{$f_1$}
 					\end{axis}
 				\end{tikzpicture}
-				\label{fig:grafo-tabela1}
+				\label{fig:grafo-tabela2}
 			\end{figure}
 		\end{center}
+	
+		\textbf{4.11 -} A velocidade do carrinho aumentou, pois havia mais peso para puxar o carrinho.
+		
+		\textbf{4.12 -} A afirmação está correta.
 	\end{flushleft}
+
+	\section{CONCLUSÃO}
+	
+	Após a realização dos experimento e a coleta de dados, foi possível verificar a realçao entre a força aplicada e a aceleração do carrinho, conforme previsto pela Segunda Leite de Newton $(F = m \cdot a)$. Os dados coletados através do sensor fotoelétrico permitiram calcular a aceleraçaão do carrinho em cada uma das condições testadas, enquanto o dinamômetro forneceu medições da força aplicada para cada adição de massa ao gancho curto. 
+	
+	Os resultados obtidos foram registrados e organizados em uma tabela utilizando o 
+	\textit{software LibreOffice Calc}, permitindo uma visualização clara das relações entre as grandezas medidas. Com base nos tempos registrados entre os intervalos da cerca ativadora e as forças correspondentes, foi possível calcular a aceleração em cada caso.
+	
+	Ao analisar os dados, foi observado que, conforme esperado, a aceleração do carrinho
+	aumentou proporcionalmente ao aumento da força aplicada, confirmando a segunda lei de Newton. A linearidade dos dados, representada nas tabelas, mostrou uma correlação direta entre a força aplicada e a aceleração, com uma inclinação correspondente à massa do sistema.
+	
+	No entanto, algumas discrepâncias entre os valores experimentais e os valores teóricos foram observadas. Essas discrepâncias podem ser atribuídas a diversos fatores, como erros de medição, atrito residual no trilho de ar (apesar de ser considerado desprezível), ou pequenas variações na força aplicada devido a inconsistências na soltura manual do carrinho. Esses erros são normais em experimentos físicos e foram considerados na análise dos resultados.
+	
+	A análise final indicou que os resultados experimentais estavam, em sua maioria, em
+	consonância com as previsões teóricas, reforçando a validade da Segunda Lei de Newton. A precisão dos dados foi adequada, e as variações observadas, embora presentes, não comprometeram a conclusão de que a força aplicada é diretamente proporcional à aceleração produzida.
+	
+	Por fim, os participantes foram capazes de identificar e compreender as possíveis fontes de erro e como elas poderiam ter influenciado os resultados. Essa reflexão é fundamental para o desenvolvimento de habilidades experimentais avançadas, permitindo uma melhor interpretação dos dados em futuros experimentos e um entendimento mais profundo dos conceitos físicos envolvidos.
+	
+	\section{REFERÊNCIAS BIBLIOGRÁFICAS}
+	
+	YOUNG, Hugh D.; FREEMAN, Roger A. \textbf{Física 1: Mecânica}. 12. ed. São Paulo: Editora Pearson, 2014.
+	
+	NUSSENZVEIG, Moysés. \textbf{Curso de Física Básica}. Vol 1. Rio de Janeiro: Editora Blucher, 2013.
 \end{document}
