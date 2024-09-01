@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.26)  31 AUG 2024 22:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.26)  1 SEP 2024 00:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1375,6 +1375,13 @@ ntourlua.code.tex)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip269
+\multirow@cntb=\count425
+\multirow@dima=\skip270
+\bigstrutjot=\dimen343
+)
 (/usr/share/texlive/texmf-dist/tex/latex/physics/physics.sty
 Package: physics 
 
@@ -1387,41 +1394,41 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count425
-\Gm@cntv=\count426
-\c@Gm@tempcnt=\count427
-\Gm@bindingoffset=\dimen343
-\Gm@wd@mp=\dimen344
-\Gm@odd@mp=\dimen345
-\Gm@even@mp=\dimen346
-\Gm@layoutwidth=\dimen347
-\Gm@layoutheight=\dimen348
-\Gm@layouthoffset=\dimen349
-\Gm@layoutvoffset=\dimen350
+\Gm@cnth=\count426
+\Gm@cntv=\count427
+\c@Gm@tempcnt=\count428
+\Gm@bindingoffset=\dimen344
+\Gm@wd@mp=\dimen345
+\Gm@odd@mp=\dimen346
+\Gm@even@mp=\dimen347
+\Gm@layoutwidth=\dimen348
+\Gm@layoutheight=\dimen349
+\Gm@layouthoffset=\dimen350
+\Gm@layoutvoffset=\dimen351
 \Gm@dimlist=\toks53
 )
 (./SegundaLeiDeNewton.aux)
 \openout1 = `SegundaLeiDeNewton.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-Package hyperref Info: Link coloring OFF on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+Package hyperref Info: Link coloring OFF on input line 27.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1432,28 +1439,28 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count428
+\c@section@level=\count429
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 26.
-LaTeX Info: Redefining \ref on input line 26.
-LaTeX Info: Redefining \pageref on input line 26.
-LaTeX Info: Redefining \nameref on input line 26.
+LaTeX Info: Redefining \nameref on input line 27.
+LaTeX Info: Redefining \ref on input line 27.
+LaTeX Info: Redefining \pageref on input line 27.
+LaTeX Info: Redefining \nameref on input line 27.
 \myptabbox=\box73
-\myptabboxwidth=\skip269
+\myptabboxwidth=\skip271
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count429
-\scratchdimen=\dimen351
+\scratchcounter=\count430
+\scratchdimen=\dimen352
 \scratchbox=\box74
-\nofMPsegments=\count430
-\nofMParguments=\count431
+\nofMPsegments=\count431
+\nofMParguments=\count432
 \everyMPshowfont=\toks54
-\MPscratchCnt=\count432
-\MPscratchDim=\dimen352
-\MPnumerator=\count433
-\makeMPintoPDFobject=\count434
+\MPscratchCnt=\count433
+\MPscratchDim=\dimen353
+\MPnumerator=\count434
+\makeMPintoPDFobject=\count435
 \everyMPtoPDFconversion=\toks55
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1468,7 +1475,7 @@ e
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 26.
+ on input line 27.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1506,29 +1513,44 @@ your preamble.
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4]
-(./SegundaLeiDeNewton.aux) ) 
-Here is how much of TeX's memory you used:
- 41279 strings out of 478287
- 929364 string characters out of 5849289
- 1492657 words of memory out of 5000000
- 58731 multiletter control sequences out of 15000+600000
- 474880 words of font info for 47 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 84i,11n,97p,966b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super
--ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf/fonts/type1/publ
-ic/cm-super/sfrm1200.pfb>
-Output written on SegundaLeiDeNewton.pdf (4 pages, 103568 bytes).
-PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
- 11 named destinations out of 1000 (max. 500000)
- 157 words of extra memory for PDF output out of 10000 (max. 10000000)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+Overfull \hbox (44.26308pt too wide) in paragraph at lines 151--179
+ [][] 
+ []
 
+
+Overfull \hbox (0.88084pt too wide) in paragraph at lines 239--241
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4])
+Runaway argument?
+0]\else \expandafter \expandafter \csname pgfflt@0Y0.0e0]\endcsname \fi \ETC.
+! File ended while scanning use of \pgfflt@readlowlevelfloat.
+<inserted text> 
+                \par 
+<*> SegundaLeiDeNewton.tex
+                          
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+! Emergency stop.
+<*> SegundaLeiDeNewton.tex
+                          
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 41841 strings out of 478287
+ 944549 string characters out of 5849289
+ 1509655 words of memory out of 5000000
+ 59290 multiletter control sequences out of 15000+600000
+ 475720 words of font info for 50 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 84i,19n,97p,966b,2421s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

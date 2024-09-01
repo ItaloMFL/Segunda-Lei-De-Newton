@@ -12,8 +12,9 @@
 \usepackage{tikz, tkz-base, tkz-fct}
 \usepackage{pgfplots}
 \usepackage{indentfirst}
-
+\usepackage{multirow}
 \usepackage{physics}
+
 \usetikzlibrary{angles,quotes} % for pic
 \contourlength{1.2pt}
 
@@ -24,7 +25,6 @@
 
 
 \begin{document}
-	
 	\begin{flushleft}
 		\textbf{RELATÓRIO 06 - A SEGUNDA LEI DE NEWTON}
 		
@@ -133,4 +133,191 @@
 	\subsection{Coleta de Dados}
 	
 	Registramos os tempos entre os intervalos coletados pelo sensor fotoelétrico da cerca ativadora e o peso coletado no dinamômetro no gancho curto. O \textit{Software LibreOffice} foi utilizado para fazer a tabela de comparação entre os intervalos de tempo em relação a força. Com os dados coletados do tempo em relação a força, utilizamos as deduções das equações feitas no fundamentos teóricos para efetuar as contas e descobrir a aceleração do carrinho em cada uma das condições.
+	
+	\section{RESULTADO E ANÁLISE DE DADOS}
+	A seguir apresentamos a Tabela 1 com dados de posição x em função do tempo t em
+	segundos obtidos durante a realização do experimento da segunda lei de Newton com o trilho de ar, dinamômetro e os pessos acoplados. Verificando a validade das equações de $F=m \cdot a$ da segunda lei de Newton.
+	
+
+	\begin{table}[h!]
+		\centering
+		\begin{adjustwidth}{0cm}{0cm}
+			\begin{flushleft}
+				\textbf{Tabela 1 -} Intervalos de tempo em relação à força.
+			\end{flushleft}
+		\end{adjustwidth}
+	
+		\label{tab:intervalos-forca}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+			\hline
+			& \textbf{F1 (N)} & \textbf{F2 (N)} & \textbf{F3 (N)} & \textbf{F4 (N)} & \textbf{F5 (N)} & \textbf{F6 (N)} & \textbf{F7 (N)} & \textbf{F8 (N)} \\ \hline
+			\textbf{F aplicada} & 0,18 & 0,28 & 0,38 & 0,48 & 0,56 & 0,72 & 0,76 & \\ \hline
+			\textbf{x (m)} & \textbf{t (s)} & \textbf{t (s)} & \textbf{t (s)} & \textbf{t (s)} & \textbf{t (s)} & \textbf{t (s)} & \textbf{t (s)} & \textbf{t (s)} \\ \hline
+			% Linha 1
+			0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+			% Linha 2
+			0,018 & 0,25615 & 0,195 & 0,1687 & 0,14345 & 0,14055 & 0,1342 & 0,12110 & 0,10645 \\ \hline
+			% Linha 3
+			0,036 & 0,3797 & 0,29435 & 0,254 & 0,21845 & 20955 & 0,1983 & 0,1809 & 0,16175 \\ \hline
+			% Linha 4
+			0,054 & 0,47475 & 0,37055 & 0,31935 & 0,27615 & 0,26235 & 0,2473 & 0,22665 & 0,20445 \\ \hline
+			% Linha 5
+			0,072 & 0,55485 & 0,4346 & 0,3745 & 0,32505 & 0,30705 & 0,28875 & 0,2653 & 0,24065 \\ \hline
+			% Linha 6
+			0,09 & 0,6256 & 0,4912 & 0,42305 & 0,36825 & 0,34645 & 0,3253 & 0,29925 & 0,27235 \\ \hline
+			% Linha 7
+			0,108 & 0,68885 & 0,542 & 0,46685 & 0,407 & 0,3817 & 0,35795 & 0,3298 & 0,30095 \\ \hline
+			% Linha 8
+			0,126 & 0,7478 & 0,58915 & 0,5074 & 0,44295 & 0,4145 & 0,3883 & 0,35835 & 0,3277 \\ \hline
+			% Linha 9
+			0,144 & 0,8025 & 0,63295 & 0,54505 & 0,4765 & 0,445 & 0,4166 & 0,38465 & 0,35235 \\ \hline
+			% Linha 10
+			0,162 & 0,85355 & 0,6739 & 0,58025 & 0,5077 & 0,47335 & 0,4429 & 0,40910 & 0,3753 \\ \hline
+			% Linha 11
+			0,80 & 0,9022 & 0,7129 & 0,61375 & 0,5375 & 0,5005 & 0,468 & 0,43270 & 0,3974 \\ \hline
+		\end{tabular}
+		
+		\begin{adjustwidth}{0cm}{0cm}
+			\begin{flushleft}
+				\textbf{Fonte: }Autoria Própria
+			\end{flushleft}
+		\end{adjustwidth}
+	\end{table}
+
+	O Gráfico 1 foi feito com os dados da Tabela 1. O gráfico do espaço em relação ao tempo.
+	
+	\begin{center}
+		\begin{figure}[h!]
+			\centering
+			\begin{flushleft}
+				\textbf{Gráfico 1 -} Espaço em espaço em relação ao tempo.
+			\end{flushleft}
+			\begin{tikzpicture}
+				\begin{axis}[
+					width=\textwidth, % Largura do gráfico
+					height=0.6\textwidth, % Altura do gráfico
+					xlabel={$t$ (s)},
+					ylabel={$x(t)$ (m)},
+					legend pos=north west,
+					grid=both,
+					title={Gráfico da Tabela 1},
+					legend style={font=\small}
+					]
+					
+					% Dados para F1
+					\addplot[blue, mark=square*] coordinates {(0.25615, 0.018) (0.3797, 0.036) (0.47475, 0.054) (0.55485, 0.072) (0.6256, 0.09) (0.68885, 0.108) (0.74778, 0.126) (0.8025, 0.144) (0.85355, 0.162) (0.9022, 0.18)};
+					\addlegendentry{$f_1$}
+					
+					% Dados para F2
+					\addplot[red, mark=*] coordinates {(0.195, 0.018) (0.29435, 0.036) (0.37055, 0.054) (0.4346, 0.072) (0.4912, 0.09) (0.542, 0.108) (0.58915, 0.126) (0.63295, 0.144) (0.6739, 0.162) (0.7129, 0.18)};
+					\addlegendentry{$f_2$}
+					
+					% Dados para F3
+					\addplot[green, mark=triangle*] coordinates {(0.1687, 0.018) (0.254, 0.036) (0.31935, 0.054) (0.3745, 0.072) (0.42305, 0.09) (0.46885, 0.108) (0.51175, 0.126) (0.54505, 0.144) (0.58025, 0.162) (0.61375, 0.18)};
+					\addlegendentry{$f_3$}
+					
+					% Dados para F4
+					\addplot[orange, mark=diamond*] coordinates {(0.14345, 0.018) (0.21845, 0.036) (0.27615, 0.054) (0.32505, 0.072) (0.36825, 0.09) (0.407, 0.108) (0.44245, 0.126) (0.4765, 0.144) (0.5077, 0.162) (0.5375, 0.18)};
+					\addlegendentry{$f_4$}
+					
+					% Dados para F5
+					\addplot[purple, mark=star] coordinates {(0.14055, 0.018) (0.20935, 0.036) (0.26235, 0.054) (0.3065, 0.072) (0.34615, 0.09) (0.3817, 0.108) (0.41455, 0.126) (0.445, 0.144) (0.47335, 0.162) (0.5005, 0.18)};
+					\addlegendentry{$f_5$}
+					
+					% Dados para F6
+					\addplot[cyan, mark=o] coordinates {(0.1342, 0.018) (0.1983, 0.036) (0.2473, 0.054) (0.28875, 0.072) (0.32545, 0.09) (0.35795, 0.108) (0.3883, 0.126) (0.4166, 0.144) (0.4429, 0.162) (0.468, 0.18)};
+					\addlegendentry{$f_6$}
+					
+					% Dados para F7
+					\addplot[magenta, mark=+] coordinates {(0.1211, 0.018) (0.1809, 0.036) (0.22665, 0.054) (0.26635, 0.072) (0.29925, 0.09) (0.3298, 0.108) (0.3583, 0.126) (0.38465, 0.144) (0.40915, 0.162) (0.4327, 0.18)};
+					\addlegendentry{$f_7$}
+					
+					% Dados para F8
+					\addplot[brown, mark=x] coordinates {(0.10645, 0.018) (0.16175, 0.036) (0.20445, 0.054) (0.24065, 0.072) (0.27245, 0.09) (0.30095, 0.108) (0.32755, 0.126) (0.35235, 0.144) (0.3753, 0.162) (0.3974, 0.18)};
+					\addlegendentry{$f_8$}
+				\end{axis}
+			\end{tikzpicture}
+			\label{fig:grafo-tabela1}
+		\end{figure}
+	\end{center}
+
+	\begin{flushleft}
+		\textbf{Questionários: }
+		
+		\textbf{4.9 -} Utilizando as equações das curvas da tendência dos gráficos x versus t, podemos derivar a função para achar a função da velocidade. Segundo os fundamentos teóricos, a derivada da velocidade é a aceleração. Ou seja, a fórmula da derivada é da seguinte forma:	
+		
+		\begin{equation*}
+			a = \dfrac{d^2x}{dt^2}
+		\end{equation*}
+	
+		Derivando todas as funções encontradas na linha tendência irá resultar exatamente na
+		aceleração. A Tabela 2 mostra os resultados obtidos:
+		
+		\begin{center}
+			\begin{table}[h!]
+				\centering
+				\begin{adjustwidth}{0cm}{0cm}
+					\begin{flushleft}
+						\textbf{Tabela 2}
+					\end{flushleft}
+				\end{adjustwidth}
+				
+				\label{tab:intervalos-forca}
+				\begin{tabular}{|c|c|}
+					\hline
+					\textbf{F (N)} & a($m/s^2$)\\ \hline
+					% Linha 1
+					0,18 & 0,40 \\ \hline
+					% Linha 2
+					0,028 & 0,61 \\ \hline
+					% Linha 3
+					0,036 & 0,84 \\ \hline
+					% Linha 4
+					0,054 & 1,08 \\ \hline
+					% Linha 5
+					0,072 & 1,30 \\ \hline
+					% Linha 6
+					0,09 & 1,52 \\ \hline
+					% Linha 7
+					0,108 & 1,74 \\ \hline
+					% Linha 8
+					0,126 & 1,96 \\ \hline
+				\end{tabular}
+				
+				\begin{adjustwidth}{0cm}{0cm}
+					\begin{flushleft}
+						\textbf{Fonte: }Autoria Própria
+					\end{flushleft}
+				\end{adjustwidth}
+			\end{table}
+		\end{center}
+	
+		\textbf{4.10 -} Gráfico 3 é o gráfico da função F versus a. O significado físico do coeficiente angular obtido no Gráfico F versus a é a massa da objeto. Pois quanto maior for a aceleração, maior será a força.
+		
+		\begin{center}
+			\begin{figure}[h!]
+				\centering
+				\begin{flushleft}
+					\textbf{Gráfico 3 -} Gráfica com linhas tendência.
+				\end{flushleft}
+				\begin{tikzpicture}
+					\begin{axis}[
+						width=\textwidth, % Largura do gráfico
+						height=0.6\textwidth, % Altura do gráfico
+						xlabel={$t(s)$},
+						ylabel={$a(m/s^2)$},
+						legend pos=north west,
+						grid=both,
+						title={Gráfico da Tabela 2},
+						legend style={font=\small}
+						]
+						
+						\addplot[blue, mark=square*] coordinates {(0.018, 0,40) (0.028, 0,61) (0.036, 0,84) (0,054, 0.072) (0.6256, 0.09) (0.68885, 0.108) (0.74778, 0.126) (0.8025, 0.144) (0.85355, 0.162) (0.9022, 0.18)};
+						\addlegendentry{$f_1$}
+					\end{axis}
+				\end{tikzpicture}
+				\label{fig:grafo-tabela1}
+			\end{figure}
+		\end{center}
+	\end{flushleft}
 \end{document}
